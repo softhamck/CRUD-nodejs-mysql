@@ -20,19 +20,19 @@ NodeTask es una aplicación de gestión de tareas construida con Node.js y MySQL
 
 ```bash
 git clone https://github.com/softhamck/CRUD-nodejs-mysql.git
-
+```
 2. Asegúrate de tener Node.js y MySQL instalados en tu sistema.
 3. Configura tu base de datos MySQL y ajusta la conexión en el archivo index.js.
 
 4. Instala las dependencias:
 ```bash
 npm install
-
+```
 5. Inicia la aplicación:
 
 ```bash
 node index.js
-
+```
 6. Abre tu navegador y accede a http://localhost:3000.
 7. Utiliza la interfaz para agregar, editar y eliminar tus tareas.
 
