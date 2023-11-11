@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Nodejs Mysql</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-200 p-6">
+    <h1 class="text-3xl font-bold mb-6">NodeTask: Organiza y Gestiona Tus Tareas con Node.js</h1>
+
+    <!-- Formulario para agregar una nueva tarea -->
+    <form id="addTaskForm" class="mb-6 bg-white shadow-lg rounded-lg p-4">
+        <label for="title" class="block text-sm font-medium text-gray-700">Título:</label>
+        <input type="text" id="title" name="title" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+
+        <label for="description" class="block mt-4 text-sm font-medium text-gray-700">Descripción:</label>
+        <textarea id="description" name="description" rows="3" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></textarea>
+
+        <button type="submit" class="mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Agregar Tarea</button>
+    </form>
+
+    <!-- Formulario para editar una tarea -->
+    <form id="editTaskForm" class="mb-6 bg-white shadow-lg rounded-lg p-4" style="display: none;">
+        <input type="hidden" id="editTaskId" name="id">
+        <label for="editTitle" class="block text-sm font-medium text-gray-700">Nuevo Título:</label>
+        <input type="text" id="editTitle" name="title" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+
+        <label for="editDescription" class="block mt-4 text-sm font-medium text-gray-700">Nueva Descripción:</label>
+        <textarea id="editDescription" name "description" rows="3" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></textarea>
+
+        <button type="submit" class="mt-4 bg-green-500 text-white p-2 rounded hover:bg-green-600">Guardar Cambios</button>
+        <button type="reset" class="mt-4 bg-gray-400 text-white p-2 rounded hover-bg-gray-500">Cancelar</button>
+    </form>
+
+    <!-- Lista de tareas existentes -->
+    <ul id="taskList" class="list-none">
+        <!-- Las tareas se agregarán dinámicamente -->
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
