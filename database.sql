@@ -1,0 +1,11 @@
+CREATE DATABASE CrudNodejs
+
+USE CrudNodejs
+
+CREATE TABLE tasks (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100),
+    description VARCHAR(225)
+);
+
+DRESCRIBE tasks;
