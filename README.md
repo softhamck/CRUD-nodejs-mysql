@@ -4,7 +4,7 @@ NodeTask es una aplicación de gestión de tareas construida con Node.js y MySQL
 
 ## Capturas de Pantalla
 
-![image](https://github.com/softhamck/CRUD-nodejs-mysql/assets/103977411/26b18754-8be1-464a-898b-98a1df78c718)
+![image](https://github.com/softhamck/CRUD-nodejs-mysql/assets/103977411/ababd205-536c-4e90-bc0e-00baa39d0788)
 
 ## Características
 
